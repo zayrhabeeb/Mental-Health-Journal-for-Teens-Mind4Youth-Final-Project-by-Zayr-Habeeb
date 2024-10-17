@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Mental Health Journal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Virtual Mental Health Journal for Teens by Zayr Habeeb for Mind4Youth Final Project</h1>
+    <p>Reflect, practice mindfulness, and set goals for your mental wellness.</p>
+  </header>
+
+  <section id="journal">
+    <h2>Daily Journaling Prompts</h2>
+    <textarea placeholder="How am I feeling today?" rows="3"></textarea>
+    <textarea placeholder="What is one positive thing that happened today?" rows="3"></textarea>
+    <textarea placeholder="Is there anything that made me feel stressed or anxious?" rows="3"></textarea>
+    <textarea placeholder="What can I do to take care of my mental health today?" rows="3"></textarea>
+    <textarea placeholder="How did I handle difficult emotions today?" rows="3"></textarea>
+    <button onclick="saveJournal()">Save Your Journal</button>
+  </section>
+
+  <section id="mindfulness">
+    <h2>Mindfulness Exercise</h2>
+    <p><strong>Breathe In, Breathe Out:</strong> Close your eyes and take five deep breaths. Write down how you feel afterward:</p>
+    <textarea placeholder="Write about how you feel..." rows="4"></textarea>
+    <p><strong>Gratitude Reflection:</strong> What are three things you are grateful for today?</p>
+    <textarea placeholder="I'm grateful for..." rows="4"></textarea>
+  </section>
+
+  <section id="goals">
+    <h2>Goal-Setting for Mental Wellness</h2>
+    <p><strong>Short-Term Goal:</strong> What is one small thing you want to achieve for your mental well-being this week?</p>
+    <textarea placeholder="Example: I will practice deep breathing exercises for 5 minutes each day." rows="3"></textarea>
+    <p><strong>Long-Term Goal:</strong> What is one long-term goal for your emotional health?</p>
+    <textarea placeholder="Example: I will manage stress by learning new coping skills." rows="3"></textarea>
+  </section>
+
+  <section id="affirmations">
+    <h2>Positive Affirmations</h2>
+    <ul id="affirmationList"></ul>
+    <button onclick="generateAffirmation()">Get a Positive Affirmation</button>
+  </section>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
